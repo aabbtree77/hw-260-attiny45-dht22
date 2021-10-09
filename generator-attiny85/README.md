@@ -33,6 +33,7 @@ OCR0A = 10; - Timer0 interrupt period 10ms.,
 ```
 Similarly, 1..255 possible values. OCRA=10 adds one millisecond to the zero level duration every 10ms., thus you can control the speed of the generated period (zero level) adjustment.
 
-**TD1**: Perhaps one could write the whole thesis just about how to handle a simple "press button" response correctly. This would involve interrupts, integration aka low pass filtering with optimal time values or their non-existence, async flows and blocking in various situations with loops resulting in an input handling C library/whole async framework for ATmegas and alikes. 
+**TD1**: Perhaps one could write the whole thesis just about how to handle a simple "press button" response correctly. This would involve interrupts, integration aka low pass filtering with optimal time values or their non-existence, async flows and blocking in various situations with loops resulting in an input handling C library/whole async framework for the ATmega chips. 
 
-**TD2**: It would be nice to be able to save DELAY_NEG_MS value and read it via some EEPROM functions once the device reboots.
+**TD2**: It would be nice to be able to save the last set DELAY_NEG_MS value and read it via some EEPROM functions once the device is turned on again the next 
+time.
