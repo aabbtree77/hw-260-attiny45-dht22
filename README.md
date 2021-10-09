@@ -16,6 +16,8 @@ the chips ATtiny25/45/58. Flashing is performed with USBasp USB ISP programmer w
 
 A sample code is provided with ATtiny45 microcontroller which measures temperature and humidity values with DHT22 (PB3, [DHT22-GPL3] code) and activates the output PB1 based on a certain range of values. The code is barely 700 bytes, so ATtiny25 is sufficient for such applications.
 
+The folder "generator-attiny85" includes a certain interrupt-driven water pump generator code. It shows how to program input buttons with their press-down or press-up states continuously adjusting a desired input value.
+
 # References
 
 - [DHT22-GPL3]
